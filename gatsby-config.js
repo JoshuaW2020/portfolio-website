@@ -18,6 +18,14 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
       __key: "images"
-    }
+    },
+    {
+      resolve: "gatsby-plugin-svgr-loader",
+      options: {
+        rule: {
+          include: /images/
+        }
+      }
+    },
   ]
 };
