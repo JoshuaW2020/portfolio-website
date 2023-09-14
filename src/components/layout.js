@@ -1,19 +1,18 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { wrapper, foot } from './layout.module.scss'
+import Navbar from './navbar'
 
 const Layout = ({ children }) => {
 
   return (
-    <div>
-      <header>
-        <nav>
-          This is a navbar
-        </nav>
-      </header>
+    <div className={wrapper}>
+      <Navbar />
       <main>
         {children}
       </main>
-      <footer>This is my footer</footer>
+      <footer className={foot}>
+        <a href="#home">You reached the bottom! Go back up?</a>
+      </footer>
     </div>
   )
 }
