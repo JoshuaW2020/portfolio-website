@@ -1,0 +1,55 @@
+/* vars */
+$text-color: #ffb4a2;
+$text-alt-color: #e5989b;
+$background: #212529;
+
+html {
+  scroll-behavior: smooth;
+}
+
+*, 
+*:before, 
+*:after { 
+  box-sizing: border-box; 
+}
+
+/* reset */
+body, p, a, ul, li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+li{
+  list-style-type: none;
+}
+
+body {
+  background: $background;
+  color: $text-color;
+}
+
+section {
+  height: 100vh;
+  padding-top: 52px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+
+/* small tablet styles */
+@media screen and (min-width: 620px){
+
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px){
+
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px){
+
+}
