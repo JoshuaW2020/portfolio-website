@@ -12,8 +12,15 @@ $background: #212529;
 
   a {
     color: $text-color;
+    transition: color 0.5s, border 0.6s;
 
     &:hover {
+      color: $text-color-hover;
+    }
+    &:active {
+      color: $text-color-hover;
+    }
+    &:focus {
       color: $text-color-hover;
     }
   }
@@ -49,11 +56,15 @@ $background: #212529;
 
 
   a {
-    fill: $text-color;
     display: flex;
+  
+    svg {
+      fill: $text-color;
+      transition: fill .5s ease;
 
-    :hover {
-      fill: $text-color-hover;
+      &:hover {
+        fill: $text-color-hover;
+      }
     }
   }
 }
@@ -76,6 +87,7 @@ $background: #212529;
 
   .title {
     grid-column: 1/4;
+    transition: color 0.5s;
   }
 
   .siteNav {
@@ -88,8 +100,14 @@ $background: #212529;
       justify-content: space-around;
       gap: 10px;
       
-      li a:hover {
-        border-bottom: 2px solid $text-color-hover;
+      li {
+        a {
+          padding: 4px 0;
+
+          &:hover {
+            border-bottom: 2px solid $text-color-hover;
+          }
+        }
       }
     }
   }
