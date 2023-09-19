@@ -3,7 +3,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import {  container,
           text,
           image,
-          skillsBox, } from "./aboutMe.module.scss"
+          skillsBox,
+          skill, } from "./aboutMe.module.scss"
 import Programming from "../assets/images/programming.svg"
 
 const AboutMe = () => {
@@ -20,7 +21,14 @@ const AboutMe = () => {
         <Programming />
       </div>
       <div class={skillsBox}>
-        <StaticImage alt="HTML5" src="../assets/images/information.svg" />
+        <div className={skill}>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="auto" height="auto" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e5989b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <title>HTML5</title>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+            <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+          </svg>
+        </div>
         <StaticImage alt="CSS3" src="../assets/images/information.svg" />
         <StaticImage alt="JavaScript" src="../assets/images/information.svg" />
         <StaticImage alt="TypeScript" src="../assets/images/information.svg" />
