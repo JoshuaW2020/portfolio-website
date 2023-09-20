@@ -1,4 +1,5 @@
 $text-color: #ffb4a2;
+$text-alt-color: #e5989b;
 
 .container {
   display: grid;
@@ -40,14 +41,14 @@ h2 {
   border-radius: 10px;
 
   .skill {
-    max-width: 4rem;
-    position: relative;
+    max-width: 2.5rem;
+
+    svg {
+      fill: $text-color;
+    }
   }
 }
 
-svg {
-  max-width: 100%;
-}
 
 /* small tablet styles */
 @media screen and (min-width: 620px){
@@ -71,6 +72,11 @@ svg {
   .skillsBox {
     grid-column: 2/12;
     grid-row: 6/7;
+    justify-content: space-evenly;
+
+    .skill {
+      max-width: 4rem;
+    }
   }
 }
 
