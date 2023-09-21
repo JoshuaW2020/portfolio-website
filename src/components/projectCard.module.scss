@@ -4,7 +4,7 @@ $text-alt-color: #e5989b;
 .container {
   display: flex;
   flex-direction: column;
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 .imageContainer {
@@ -54,15 +54,36 @@ $text-alt-color: #e5989b;
 @media screen and (min-width: 620px){
 
   .container {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .imageContainer {
+    grid-column: 1/4;
+    max-width: 100%;
+  }
+
+  .textContainer {
+    grid-column: 4/7;
+    padding-top: 0;
+
+    h4 {
+      margin-top: 0;
+    }
   }
 }
 
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px){
 
-  .textContainer {
+  .imageContainer {
+    grid-column: 2/4;
+  }
   
+  .textContainer {
+    grid-column: 4/6;
+
     ul {
   
       li {

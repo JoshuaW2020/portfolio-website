@@ -9,6 +9,7 @@ $background: #212529;
   place-items: center;
   justify-content: stretch;
   background: $background;
+  z-index: 1;
 
   a {
     color: $text-color;
