@@ -1,6 +1,6 @@
 # Joshua Walsh - Portfolio Website
 
-  Make sure to checkout my website here: [Joshua Walsh]('')
+  Make sure to checkout my website here: [Joshua Walsh](https://joshua-walsh.netlify.app/)
 
 ##  More
 Feel free to browse the code and run it locally by:

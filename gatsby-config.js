@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Joshua Walsh - SWE`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://joshua-walsh.netlify.app/`
   },
   plugins: [
     "gatsby-plugin-sass", 
