@@ -1,31 +1,15 @@
-import * as React from 'react'
+import * as React from "react"
+import ContactForm from "./contactForm"
+import {  container,
+          form, } from "./contact.module.scss"
 
 const Contact = () => {
 
   return (
-    <section id="contact">
-      <div>
-        <h2>Like what you see and want to connect? Fill out the contact form and send me a message!</h2>
-        <form>
-          <div>
-            <input />
-          </div>
-          <div>
-            <input />
-          </div>
-          <div>
-            <input />
-          </div>
-          <div>
-            <input />
-          </div>
-          <div>
-            <input />
-          </div>
-          <div>
-            <button type="submit"> Send </button>
-          </div>
-        </form>
+    <section className={container} id="contact">
+      <h3>Like what you see and want to connect? Fill out the form below or checkout my linkedin at the top right!</h3>
+      <div className={form}>
+        <ContactForm />
       </div>
     </section>
   )
