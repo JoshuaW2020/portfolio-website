@@ -6,13 +6,24 @@ import {  container,
 const ProjectCard = ({ image, title="Title",  desc="Description", demoLink="", githubLink="" }) => {
   let links = null;
   if (demoLink) {
-    links = (
-      <>
-        {demoLink ? <li>
-        <a href={demoLink} target="_blank" rel="noreferrer">Live Demo</a>
-        </li> : null}
-      </>
-    );
+    if (demoLink === "#home") {
+      links = (
+        <>
+          <li>
+            <a href={demoLink}>Live Demo</a>
+          </li>
+        </>
+      );
+    }
+    else {
+      links = (
+        <>
+          <li>
+            <a href={demoLink} target="_blank" rel="noreferrer">Live Demo</a>
+          </li>
+        </>
+      );
+    }
   }
 
   if (links && githubLink) {
@@ -26,7 +37,7 @@ const ProjectCard = ({ image, title="Title",  desc="Description", demoLink="", g
       </>
     )
   }
-  else {
+  else if (githubLink) {
     links = (
       <>
         <li>
