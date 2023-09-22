@@ -12,7 +12,7 @@ const Projects = () => {
       <div className={projectsContainer}>
         <ProjectCard 
           image={
-            <StaticImage src="../assets/images/portfolio_website.png" alt="A portfolio website home page" />
+            <StaticImage src="../assets/images/portfolio_website.PNG" alt="A portfolio website home page" />
           } 
           title={"Portfolio Website"} 
           desc={"A personal website and portfolio page for myself. This application describes my skills and project accomplishments to people like you! Developed with Gatsby, React.js, SASS, HTML, and hosted on Netlify."} 
@@ -20,7 +20,7 @@ const Projects = () => {
         />
         <ProjectCard 
           image={
-            <StaticImage src="../assets/images/meeting_website_dashboard.png" alt="A portfolio website home page" />
+            <StaticImage src="../assets/images/meeting_website_dashboard.PNG" alt="A portfolio website home page" />
           }
           title={"Meeting Coordination Website"} 
           desc={"A web application developed for a construction consulting company as a team of six. The app helps coordinate meeting sessions and saves time by displaying upcoming sessions as part of projects and allows searching of the event backlog reducing space and time spent on physical storage of session information. Implemented with React.js, Python Django, HTML, CSS, Selenium testing and hosted on GoDaddy. No links are available as it was a packaged product for the client."} 
