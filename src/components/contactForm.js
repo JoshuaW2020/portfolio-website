@@ -38,12 +38,13 @@ const ContactForm = () => {
         console.log(response)
     })
     .catch(error => {
+        alert('There was an issue sending message, send me an email at: joshua.walsh1998@gmail.com')
         console.log(error)
     })
   }
 
   return (
-    <form className={container} method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" onSubmit={handleSubmit(onSubmit)} action="/" id="contactForm">
+    <form className={container} method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" onSubmit={handleSubmit(onSubmit)} action="/submission" id="contactForm">
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
 
@@ -93,7 +94,7 @@ const ContactForm = () => {
         <textarea
           name="message"
           type="text"
-          placeholder="Write your message here..."
+          placeholder="Type your message here..."
           {...register("message", {required: true})}
         />
         {errors.message && (
